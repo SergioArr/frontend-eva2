@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación 2 - Sergio Argel</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <div class="text-center m-4"> <h2> Ferretería FrontEnd</h2></div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h3 class="text-center">Productos y Detalles</h3>
+            <table class="table grilla-productos">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Stock</th>
+                  <th>Foto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Clavos</td>
+                  <td id="precioClavos">$50</td>
+                  <td id="stockClavos">200</td>
+                  <td><img src="img/clavos.jpg" alt="Clavos"></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Pernos</td>
+                  <td id="precioPernos">$150</td>
+                  <td id="stockPernos">150</td>
+                  <td><img src="img/pernos.webp" alt="Pernos"></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Tuercas</td>
+                  <td id="precioTuercas">$200</td>
+                  <td id="stockTuercas">200</td>
+                  <td><img src="img/tuercas.jfif" alt="Tuercas"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h3 class="text-center">Estado de Pago</h3>
+            <table class="table grilla-totales">
+                <div class="col-md-12">
+                <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Edad</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td id="nombreDet">--</td>
+                        <td id="edadDet">--</td>
+                    </tr>
+                  </tbody>
+                </div>
+              <thead>
+                <tr>
+                  <th>Productos</th>
+                  <th>Cantidad</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Agrega los datos de tu tabla aquí -->
+                <tr>
+                    <td>Clavos</td>
+                    <td id="clavosCantidad">0</td>
+                    <td id="clavosTotal">0</td>
+                </tr>
+                <tr>
+                    <td>Pernos</td>
+                    <td id="pernosCantidad">0</td>
+                    <td id="pernosTotal">0</td>
+                </tr>
+                <tr>
+                    <td>Tuercas</td>
+                    <td id="tuercasCantidad">0</td>
+                    <td id="tuercasTotal">0</td>
+                </tr>
+                <tr>
+                    <td> <strong>Totales</strong></td>
+                    <td id="totalCantidad">0</td>
+                    <td id="totalTotal">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+        <form id="miFormulario">
+            <div class="form-group mt-9">
+              <label for="nombre">Ingrese su nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre">
+              <span id="nombreError"></span>
+            </div>
+            <div class="form-group">
+              <label for="edad">Ingrese su edad</label>
+              <input type="number" class="form-control" id="edad" name="edad">
+              <span id="edadError"></span>
+            </div>
+            <div class="form-group">
+              <label for="cantidad-clavos">Cantidad de Clavos</label>
+              <input type="number" class="form-control" id="cantidadClavos" name="cantidadClavos" value="0">
+              <span id="cantidadClavosError"></span>
+            </div>
+            <div class="form-group">
+                <label for="cantidadPernos">Cantidad de Pernos</label>
+                <input type="number" class="form-control" id="cantidadPernos" name="cantidadPernos" value="0">
+                <span id="cantidadPernosError"></span>
+              </div>
+              <div class="form-group">
+                <label for="cantidad-tuercas">Cantidad de Tuercas</label>
+                <input type="number" class="form-control" id="cantidadTuercas" name="cantidadTuercas" value="0">
+                <span id="cantidadTuercasError"></span>
+              </div>
+            <button type="submit" class="btn btn-primary" id="Pagar">Total a Pagar</button>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

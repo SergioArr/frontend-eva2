@@ -1,0 +1,17 @@
+.grilla-productos img {
+    width: 100px;
+    height: 70px;
+  }
+
+
+input.error {
+    border: 2px dashed red;
+}
+
+span {
+    color: red;
+}
+
+body {
+    margin: 30px;
+  }
